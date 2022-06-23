@@ -1,0 +1,39 @@
+@use '/src/styles/mixins/flexbox';
+@use '/src/styles/constants/colors';
+
+.awards {
+  @include flexbox.flexbox(between, center);
+  flex-direction: row;
+  width: 500px;
+  height: 100px;
+
+  .award {
+    font-family: sans-serif;
+    font-weight: bold;
+    color: colors.$AWARD_FONT_COLOR;
+    list-style-type: none;
+    @include flexbox.flexbox(between, center);
+
+    .google {
+      display: inline-block;
+      width: 54px;
+      height: 54px;
+      padding-right: 5px;
+      background-image: url('../images/play-store2x.png');
+      background-repeat: no-repeat;
+      background-position: left top;
+      background-size: 54px 54px;
+    }
+
+    .apple {
+      display: inline-block;
+      width: 54px;
+      height: 54px;
+      padding-right: 5px;
+      background-image: url('../images/badge-apple4x.png');
+      background-repeat: no-repeat;
+      background-position: left top;
+      background-size: 54px 54px;
+    }
+  }
+}

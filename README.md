@@ -6,11 +6,11 @@
 
 # 🔧 기술 스텍과 선택 이유
 
-- Typescript:
+<!-- - Typescript: 타입 안정성을 통해 에러나 버그를 줄일 수 있기 때문에 선택하였습니다.
 
 - React:
 
-- scss:
+- scss: -->
 
 # 📌 실행 방법
 
@@ -20,7 +20,7 @@ git clone https://github.com/Dojinkyung/wanted_personal_project.git`
 ```
 
 ```
-npm insatll && yarn start
+npm insatll && npm start
 
 ```
 

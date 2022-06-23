@@ -1,0 +1,16 @@
+@use '/src/styles/mixins/flexbox';
+@use '/src/styles/constants/colors';
+
+.metrics {
+  @include flexbox.flexbox(between, start);
+  flex-direction: column;
+
+  .metric {
+    margin-bottom: 20px;
+    font-family: sans-serif;
+    font-size: 36px;
+    color: colors.$METRICS_FONT_COLOR;
+    letter-spacing: -1px;
+    list-style-type: none;
+  }
+}

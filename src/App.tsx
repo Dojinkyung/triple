@@ -1,8 +1,18 @@
-// import styles from './routes.module.scss'
+import styles from './app.module.scss'
+import Awards from './component/Awards'
+import ContentLogo from './component/ContentLogo'
+import Metrics from './component/Metrics'
 
-// import { BrowserRouter, Routes, Route } from 'react-router-dom'
 const App = () => {
-  return <div>hello</div>
+  return (
+    <main className={styles.app}>
+      <ContentLogo />
+      <div>
+        <Metrics />
+        <Awards />
+      </div>
+    </main>
+  )
 }
 
 export default App

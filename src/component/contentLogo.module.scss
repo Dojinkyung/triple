@@ -1,0 +1,20 @@
+@use '/src/styles/constants/colors';
+
+.tripleLogo {
+  display: inline-block;
+  width: 400px;
+  height: 60px;
+  padding-top: 280px;
+  text-align: center;
+  background-image: url('../images/triple2x.png');
+  background-repeat: no-repeat;
+  background-size: 400px 338px;
+
+  &::after {
+    position: relative;
+    font-family: sans-serif;
+    font-size: 15px;
+    color: colors.$TRIPLE_FONT_COLOR;
+    content: '2021년 12월 기준';
+  }
+}
