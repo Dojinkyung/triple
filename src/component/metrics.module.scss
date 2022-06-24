@@ -1,9 +1,12 @@
 @use '/src/styles/mixins/flexbox';
 @use '/src/styles/constants/colors';
+@use '/src/styles/mixins/animation';
 
 .metrics {
   @include flexbox.flexbox(between, start);
   flex-direction: column;
+  animation: fadein 700ms;
+  animation-delay: 100ms;
 
   .metric {
     margin-bottom: 20px;
