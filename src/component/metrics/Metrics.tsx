@@ -1,4 +1,5 @@
-import useCountUp from '../hook/useCountUp'
+import useCountUp from '../../hooks/useCountUp'
+
 import styles from './metrics.module.scss'
 
 const Metrics = () => {

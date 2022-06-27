@@ -1,7 +1,7 @@
+import Awards from './component/award/Awards'
+import ContentLogo from './component/contentLogo/ContentLogo'
+import Metrics from './component/metrics/Metrics'
 import styles from './app.module.scss'
-import Awards from './component/Awards'
-import ContentLogo from './component/ContentLogo'
-import Metrics from './component/Metrics'
 
 const App = () => {
   return (

@@ -1,4 +1,5 @@
-import { useEffect, useRef, useState } from 'react'
+import { useState } from 'react'
+
 import useInterval from './useInterval'
 
 const useCountUp = (end: number) => {
@@ -8,16 +9,17 @@ const useCountUp = (end: number) => {
   const duration = 2000
   const slowDuration = 600
   const fastDuration = duration - slowDuration
+
   const counter = Math.ceil((countFast / fastDuration) * 1000) / 100
 
-  const fastcountup = () => {
+  const useFastCountUp = () => {
     useInterval(() => {
       if (count < countFast) {
         setCount((prev) => prev + counter)
       }
     }, 10)
   }
-  const slowcountup = () => {
+  const useSlowCountUp = () => {
     useInterval(() => {
       if (countFast <= count && count < end) {
         setCount((prev) => prev + 1)
@@ -27,9 +29,9 @@ const useCountUp = (end: number) => {
       }
     }, slowDuration / countSlow)
   }
-  console.log(counter, count)
-  fastcountup()
-  slowcountup()
+
+  useFastCountUp()
+  useSlowCountUp()
 
   return Math.floor(count)
 }

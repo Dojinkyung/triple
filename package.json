@@ -1,15 +1,14 @@
 {
-  "name": "test",
+  "name": "my-app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
     "@testing-library/user-event": "^13.5.0",
-    "@types/react": "^18.0.14",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-scripts": "5.0.1",
+    "react-scripts": "^4.0.3",
     "typescript": "^4.7.4",
     "web-vitals": "^2.1.4"
   },
@@ -22,8 +21,8 @@
     "lint:es:fix": "npm run lint:es -- --fix",
     "lint:etc": "prettier '**/*.{json,yaml,md}' --check",
     "lint:etc:fix": "prettier '**/*.{json,yaml,md}' --write",
-    "lint:style": "stylelint './**/*.{js,ts,tsx,scss,css}'",
-    "lint:style:fix": "stylelint './**/*.{js,ts,tsx,scss,css}' --fix"
+    "lint:style": "stylelint './**/*.{js,ts,tsx,css}'",
+    "lint:style:fix": "stylelint './**/*.{js,ts,tsx,css}' --fix"
   },
   "eslintConfig": {
     "extends": [
@@ -45,11 +44,22 @@
   },
   "devDependencies": {
     "@titicaca/eslint-config-triple": "^3.1.0",
-    "prettier": "^2.6.2",
+    "@typescript-eslint/eslint-plugin": "^5.29.0",
+    "@typescript-eslint/parser": "^5.29.0",
+    "eslint": "^7.32.0",
+    "eslint-plugin-html": "^6.2.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^6.0.0",
+    "eslint-plugin-standard": "^5.0.0",
     "sass": "^1.53.0",
-    "stylelint": "^14.8.1",
     "stylelint-config-recess-order": "^3.0.0",
     "stylelint-config-standard-scss": "^3.0.0",
     "stylelint-declaration-strict-value": "^1.8.0"
-  }
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
