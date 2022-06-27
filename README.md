@@ -1,10 +1,7 @@
 # ✨트리플 사전과제✨
 
-s
-
-# 🚀 배포
-
-<!-- [![Netlify Status](https://api.netlify.com/api/v1/badges/8c963488-351b-41d4-9152-60535ac564b2/deploy-status)]() -->
+## 📸 화면
+![detail](https://user-images.githubusercontent.com/63532503/175938133-5638e680-56df-41b4-9878-74fcdd9818c6.gif)
 
 # 🔧 기술 스텍과 선택 이유
 
@@ -38,6 +35,5 @@ npm insatll && npm start
 
 ## 숫자가 올라가는 애니메이션
 
-## 📸 화면
 
 # ✏️ 개선해야 할 점& 어려웠던 점
